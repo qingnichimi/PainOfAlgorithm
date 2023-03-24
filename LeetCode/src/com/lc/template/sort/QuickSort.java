@@ -1,4 +1,4 @@
-package com.lc.template;
+package com.lc.template.sort;
 
 import com.lc.utils.Utils;
 
