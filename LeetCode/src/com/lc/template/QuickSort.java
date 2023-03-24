@@ -1,5 +1,7 @@
 package com.lc.template;
 
+import com.lc.utils.Utils;
+
 /**
  * @Author taoweishu
  * @Date 2023/03/23 16:59
@@ -19,17 +21,12 @@ public class QuickSort {
 			while(nums[l] <= p && l < r) {
 				l++;
 			}
-			swap(nums, l, r);
+			Utils.swap(nums, l, r);
 		}
 		nums[left] = nums[l];
 		nums[l] = p;
 		quickSort(nums, left, l - 1);
 		quickSort(nums, l + 1, right);
-	}
-	public static void swap(int[] nums, int a, int b) {
-		int temp = nums[a];
-		nums[a] = nums[b];
-		nums[b] = temp;
 	}
 	public static void main(String[] args) {
 		int[] nums = new int[]{8,4,6,3,7,4,2,5,2,1};
