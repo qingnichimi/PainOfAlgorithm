@@ -20,7 +20,7 @@ public class MedianOfTwoSortedArrays {
 			return getKth(nums2, start2, end2, nums1, start1, end1, k);
 		}
 		if (len1 == 0) {
-			return nums2[start1 + k - 1];
+			return nums2[start2 + k - 1];
 		}
 		if (k == 1) {
 			return Math.min(nums1[start1], nums2[start2]);
