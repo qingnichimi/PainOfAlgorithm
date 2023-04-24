@@ -32,7 +32,6 @@ public class AddTwoNumbers {
 			cur.next = new ListNode(carry);
 		}
 		return pre.next;
-		// change 2
 	}
 
 }
